@@ -5,16 +5,6 @@
 
 ![Tracker Index Image](https://github.com/ejlopez44/workout-tracker/blob/master/public/assets/images/trackerIndex.png)
 
-## Table of Contents
-
-* [Description](#description)
-
-* [Installation](#installation)
-
-* [Usage](#usage)
-
-* [Questions](#questions)
-
 ## Description
 
 You can view the deployed application here at: https://lit-sands-37902.herokuapp.com/
