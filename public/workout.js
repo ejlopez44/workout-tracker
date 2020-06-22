@@ -16,8 +16,12 @@ async function initWorkout() {
     };
     console.log(workoutSummary)
     workoutSummary.totalDuration = `${workoutSummary.totalDuration} minutes`
-    workoutSummary.totalDistance = `${workoutSummary.totalDistance} miles`
-    workoutSummary.totalWeight = `${workoutSummary.totalWeight} lbs`
+    if (workoutSummary.totalDistance) {
+      workoutSummary.totalDistance = `${workoutSummary.totalDistance} miles`
+    }
+    if (workoutSummary.totalWeight) {
+      workoutSummary.totalWeight = `${workoutSummary.totalWeight} lbs`
+    }
     renderWorkoutSummary(workoutSummary);
   } else {
     renderNoWorkoutText()
