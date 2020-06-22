@@ -1,6 +1,10 @@
 
 # Workout Tracker
 
+![Dashboard Stats Image]('https://github.com/ejlopez44/workout-tracker/blob/master/public/assets/images/trackerDashboard.png?raw=true'){width=300px}
+
+![Tracker Index Image]('https://github.com/ejlopez44/workout-tracker/blob/master/public/assets/images/trackerIndex.png?raw=true'){width=300px}
+
 ## Table of Contents
 
 * [Description](#description)
