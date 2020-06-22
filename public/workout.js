@@ -14,7 +14,10 @@ async function initWorkout() {
       numExercises: lastWorkout.exercises.length,
       ...tallyExercises(lastWorkout.exercises)
     };
-
+    console.log(workoutSummary)
+    workoutSummary.totalDuration = `${workoutSummary.totalDuration} minutes`
+    workoutSummary.totalDistance = `${workoutSummary.totalDistance} miles`
+    workoutSummary.totalWeight = `${workoutSummary.totalWeight} lbs`
     renderWorkoutSummary(workoutSummary);
   } else {
     renderNoWorkoutText()
