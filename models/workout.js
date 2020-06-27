@@ -3,7 +3,6 @@
 
 const mongoose = require("mongoose");
 const Int32 = require("mongoose-int32");
-// const Exercise = require("./exercise");
 
 const Schema = mongoose.Schema;
 
@@ -38,27 +37,7 @@ const workoutSchema = new Schema({
         default: Date.now
     },
     exercises: [exerciseSchema]
-
-    // type: [
-    //     {
-    //         type: String,
-    //         name: String,
-    //         duration: Int32Array,
-    //         weight: Int32Array,
-    //         reps: Int32Array,
-    //         sets: Int32Array
-    //     }
-    // ],
-    // default: undefined
 });
-
-workoutSchema.methods.addExercise = function (exercise) {
-    // console for debugging
-    console.log(exercise)
-    // take the object passed and push it to the array of exercises
-    // this.exercises.push(exercise)
-    return this.exercises;
-};
 
 const Workout = mongoose.model("Workout", workoutSchema);
 
